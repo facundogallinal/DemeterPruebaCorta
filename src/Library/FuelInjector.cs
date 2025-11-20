@@ -11,5 +11,17 @@ namespace Ucu.Poo.Cars
         /// El sensor del inyector de combustible.
         /// </summary>
         public Sensor Sensor { get; private set; } = new Sensor();
+
+        public bool FaultyFuelInjector()
+        {
+            if (this.Sensor.IsFaulty)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

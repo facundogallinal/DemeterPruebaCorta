@@ -9,5 +9,17 @@ namespace Ucu.Poo.Cars
         /// El sensor del freno.
         /// </summary>
         public Sensor Sensor { get; private set; } = new Sensor();
+
+        public bool FaultyBreak()
+        {
+            if (this.Sensor.IsFaulty)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

@@ -30,5 +30,31 @@ namespace Ucu.Poo.Cars
                 this.fuelInjectors[i] = new FuelInjector();
             }
         }
+        
+        public int CountyFaultyFuelInjectors()
+        {
+            int faultycount = 0;
+            foreach (FuelInjector fuelInjector in this.FuelInjectors)
+            {
+                if (fuelInjector.FaultyFuelInjector())
+                {
+                    faultycount += 1;
+                }
+            }
+
+            return faultycount;
+        }
+
+        public bool CountyFaultyOilPump()
+        {
+            if (this.OilPump.FaultyOilPump())
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

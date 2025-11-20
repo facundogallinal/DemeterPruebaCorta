@@ -72,23 +72,17 @@ namespace Ucu.Poo.Cars
         {
             int faultyCount = 0;
 
+            faultyCount = this.Engine.CountyFaultyFuelInjectors();
+
             for (int i = 0; i < 4; i++)
             {
-                if (this.Engine.FuelInjectors[i].Sensor.IsFaulty)
+                if (this.Wheels[i].CountyFaultyWheel())
                 {
                     faultyCount++;
                 }
             }
 
-            for (int i = 0; i < 4; i++)
-            {
-                if (this.Wheels[i].Break.Sensor.IsFaulty)
-                {
-                    faultyCount++;
-                }
-            }
-
-            if (this.Engine.OilPump.Sensor.IsFaulty)
+            if (this.Engine.CountyFaultyOilPump())
             {
                 faultyCount++;
             }
