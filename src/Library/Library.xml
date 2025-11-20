@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Library</name>
+    </assembly>
+    <members>
+        <member name="T:Ucu.Poo.Cars.Break">
+            <summary>
+            Represents un freno de un auto.
+            </summary>
+        </member>
+        <member name="P:Ucu.Poo.Cars.Break.Sensor">
+            <summary>
+            El sensor del freno.
+            </summary>
+        </member>
+        <member name="T:Ucu.Poo.Cars.Car">
+            <summary>
+            Representa un auto con su motor y 4 ruedas.
+            </summary>
+        </member>
+        <member name="P:Ucu.Poo.Cars.Car.Make">
+            <summary>
+            Obtiene o establece la marca del auto.
+            </summary>
+        </member>
+        <member name="P:Ucu.Poo.Cars.Car.Model">
+            <summary>
+            Obtiene o establece el modelo del auto.
+            </summary>
+        </member>
+        <member name="P:Ucu.Poo.Cars.Car.Year">
+            <summary>
+            Obtiene o establece el año del auto.
+            </summary>
+        </member>
+        <member name="P:Ucu.Poo.Cars.Car.Engine">
+            <summary>
+            Obtiene el motor del auto.
+            </summary>
+        </member>
+        <member name="P:Ucu.Poo.Cars.Car.Wheels">
+            <summary>
+            Obtiene las ruedas del auto.
+            </summary>
+        </member>
+        <member name="M:Ucu.Poo.Cars.Car.#ctor(System.String,System.String,System.Int32)">
+            <summary>
+            Inicializa una nueva instancia de la clase <see cref="T:Ucu.Poo.Cars.Car"/>.
+            </summary>
+            <param name="make">El fabricante del auto.</param>
+            <param name="model">El modelo del auto.</param>
+            <param name="year">El año dle auto.</param>
+        </member>
+        <member name="M:Ucu.Poo.Cars.Car.ToString">
+            <summary>
+            Devuelve una representación en text del auto.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ucu.Poo.Cars.Car.CountFaultySensors">
+            <summary>
+            Determina la cantidad de sensores defectuosos en el auto.
+            </summary>
+            <returns>La cantidad de sensores defectuosos.</returns>
+        </member>
+        <member name="T:Ucu.Poo.Cars.Engine">
+            <summary>
+            Representa el motor de un auto con una bomba de aceite y cuatro
+            inyectores de combustible.
+            </summary>
+        </member>
+        <member name="P:Ucu.Poo.Cars.Engine.OilPump">
+            <summary>
+            La bomba de aceite del motor.
+            </summary>
+        </member>
+        <member name="P:Ucu.Poo.Cars.Engine.FuelInjectors">
+            <summary>
+            Los inyectores de combustible del motor.
+            </summary>
+        </member>
+        <member name="M:Ucu.Poo.Cars.Engine.#ctor">
+            <summary>
+            Inicializa una nueva instancia de la clase <see cref="T:Ucu.Poo.Cars.Engine"/>.
+            </summary>
+        </member>
+        <member name="T:Ucu.Poo.Cars.FuelInjector">
+            <summary>
+            Representa un inyector de combustible.
+            </summary>
+        </member>
+        <member name="P:Ucu.Poo.Cars.FuelInjector.Sensor">
+            <summary>
+            El sensor del inyector de combustible.
+            </summary>
+        </member>
+        <member name="T:Ucu.Poo.Cars.OilPump">
+            <summary>
+            Representa una bomba de aceite.
+            </summary>
+        </member>
+        <member name="P:Ucu.Poo.Cars.OilPump.Sensor">
+            <summary>
+            El sensor de la bomba de aceite.
+            </summary>
+        </member>
+        <member name="T:Ucu.Poo.Cars.Sensor">
+            <summary>
+            Representa un sensor de un componente del auto.
+            </summary>
+        </member>
+        <member name="P:Ucu.Poo.Cars.Sensor.IsFaulty">
+            <summary>
+            Obtiene un valor que indica si el sensor está fallando.
+            </summary>
+        </member>
+        <member name="M:Ucu.Poo.Cars.Sensor.Fail">
+            <summary>
+            Hace que el sensor falle.
+            </summary>
+        </member>
+        <member name="T:Ucu.Poo.Cars.Wheel">
+            <summary>
+            Representa una rueda de un auto.
+            </summary>
+        </member>
+        <member name="P:Ucu.Poo.Cars.Wheel.Break">
+            <summary>
+            El freno de la rueda.
+            </summary>
+        </member>
+    </members>
+</doc>
